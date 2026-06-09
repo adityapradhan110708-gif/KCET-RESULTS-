@@ -1,3 +1,6 @@
+
+raw
+Kcet result · HTML
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
-
+ 
   body {
     background: #e8eaf0;
     font-family: Arial, sans-serif;
@@ -18,20 +21,20 @@
     justify-content: center;
     padding: 24px;
   }
-
+ 
   /* ── LOGIN CARD ── */
   .login-wrap {
     width: 100%;
     max-width: 520px;
   }
-
+ 
   .gov-card {
     background: #fff;
     border-radius: 3px;
     overflow: hidden;
     box-shadow: 0 4px 24px rgba(0,0,0,0.13);
   }
-
+ 
   /* Top bar */
   .gov-topbar {
     background: #fff;
@@ -41,7 +44,7 @@
     justify-content: space-between;
     border-bottom: 2px solid #003087;
   }
-
+ 
   .kea-logo {
     background: #7b2d8b;
     color: #fff;
@@ -52,20 +55,20 @@
     border-radius: 2px;
     letter-spacing: 1px;
   }
-
+ 
   .gov-center-text {
     text-align: center;
     flex: 1;
     padding: 0 12px;
   }
-
+ 
   .gov-center-text .t1 {
     font-family: 'Rajdhani', sans-serif;
     font-size: 18px;
     font-weight: 700;
     color: #111;
   }
-
+ 
   .gov-center-text .t2 {
     font-family: 'Rajdhani', sans-serif;
     font-size: 13px;
@@ -73,7 +76,7 @@
     color: #7b2d8b;
     margin-top: 1px;
   }
-
+ 
   .gov-emblem {
     width: 46px;
     height: 46px;
@@ -85,7 +88,7 @@
     font-size: 20px;
     flex-shrink: 0;
   }
-
+ 
   /* Green title */
   .gov-exam-title {
     background: #1a5c1a;
@@ -97,7 +100,7 @@
     font-weight: 600;
     letter-spacing: 0.3px;
   }
-
+ 
   /* Blue section bar */
   .gov-section-bar {
     background: #003087;
@@ -109,13 +112,13 @@
     font-weight: 700;
     letter-spacing: 1px;
   }
-
+ 
   /* Form area */
   .gov-form-body {
     padding: 28px 32px 24px;
     background: #fff;
   }
-
+ 
   .form-instruction {
     font-size: 12.5px;
     color: #444;
@@ -125,11 +128,11 @@
     margin-bottom: 22px;
     line-height: 1.5;
   }
-
+ 
   .form-row {
     margin-bottom: 18px;
   }
-
+ 
   .form-label {
     display: block;
     font-size: 12px;
@@ -138,11 +141,11 @@
     margin-bottom: 6px;
     letter-spacing: 0.2px;
   }
-
+ 
   .form-label span {
     color: #c00;
   }
-
+ 
   .form-input {
     width: 100%;
     border: 1px solid #aab;
@@ -156,26 +159,26 @@
     outline: none;
     transition: border-color 0.2s, box-shadow 0.2s;
   }
-
+ 
   .form-input:focus {
     border-color: #003087;
     box-shadow: 0 0 0 2px rgba(0,48,135,0.12);
     background: #fff;
   }
-
+ 
   .form-input::placeholder {
     color: #aaa;
     letter-spacing: 0.5px;
     font-size: 12px;
   }
-
+ 
   /* DOB row with three selects */
   .dob-row {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 8px;
   }
-
+ 
   .dob-row select {
     width: 100%;
     border: 1px solid #aab;
@@ -190,12 +193,12 @@
     transition: border-color 0.2s;
     appearance: auto;
   }
-
+ 
   .dob-row select:focus {
     border-color: #003087;
     box-shadow: 0 0 0 2px rgba(0,48,135,0.12);
   }
-
+ 
   /* Submit button */
   .gov-btn {
     width: 100%;
@@ -213,14 +216,14 @@
     margin-top: 8px;
     transition: background 0.15s, box-shadow 0.15s;
   }
-
+ 
   .gov-btn:hover {
     background: #002270;
     box-shadow: 0 4px 12px rgba(0,48,135,0.3);
   }
-
+ 
   .gov-btn:active { background: #001a55; }
-
+ 
   /* Error */
   .error-box {
     display: none;
@@ -235,9 +238,9 @@
     align-items: center;
     gap: 8px;
   }
-
+ 
   .error-box.show { display: flex; }
-
+ 
   /* Card footer */
   .gov-card-footer {
     background: #f5f6fa;
@@ -248,7 +251,7 @@
     text-align: center;
     font-family: 'IBM Plex Mono', monospace;
   }
-
+ 
   /* ── RESULT SCORECARD ── */
   #result-panel {
     display: none;
@@ -256,16 +259,16 @@
     max-width: 960px;
     animation: fadeUp 0.5s ease both;
   }
-
+ 
   #result-panel.show { display: block; }
-
+ 
   .scorecard-wrap {
     background: #fff;
     border-radius: 3px;
     overflow: hidden;
     box-shadow: 0 4px 24px rgba(0,0,0,0.13);
   }
-
+ 
   .sc-topbar {
     background: #fff;
     padding: 14px 20px 10px;
@@ -274,7 +277,7 @@
     justify-content: space-between;
     border-bottom: 2px solid #003087;
   }
-
+ 
   .sc-kea-logo {
     background: #7b2d8b;
     color: #fff;
@@ -285,20 +288,20 @@
     border-radius: 2px;
     letter-spacing: 1px;
   }
-
+ 
   .sc-gov-text {
     text-align: center;
     flex: 1;
     padding: 0 12px;
   }
-
+ 
   .sc-gov-text .gov-title {
     font-family: 'Rajdhani', sans-serif;
     font-size: 18px;
     font-weight: 700;
     color: #111;
   }
-
+ 
   .sc-gov-text .gov-sub {
     font-family: 'Rajdhani', sans-serif;
     font-size: 13px;
@@ -306,7 +309,7 @@
     color: #7b2d8b;
     margin-top: 1px;
   }
-
+ 
   .sc-emblem {
     width: 46px;
     height: 46px;
@@ -318,7 +321,7 @@
     font-size: 20px;
     flex-shrink: 0;
   }
-
+ 
   .sc-exam-title {
     background: #1a5c1a;
     color: #fff;
@@ -328,7 +331,7 @@
     font-size: 14px;
     font-weight: 600;
   }
-
+ 
   .sc-section-header {
     background: #003087;
     color: #fff;
@@ -339,7 +342,7 @@
     font-weight: 700;
     letter-spacing: 1px;
   }
-
+ 
   .sc-info-row {
     display: flex;
     border-bottom: 1px solid #ccd;
@@ -348,7 +351,7 @@
     color: #111;
     font-family: 'IBM Plex Mono', monospace;
   }
-
+ 
   .sc-info-cell {
     padding: 8px 16px;
     border-right: 1px solid #ccd;
@@ -356,20 +359,20 @@
     align-items: center;
     gap: 8px;
   }
-
+ 
   .sc-info-cell:last-child { border-right: none; }
   .sc-info-cell .lbl { color: #555; font-size: 12px; }
   .sc-info-cell .val { font-weight: 500; color: #000; }
-
+ 
   .sc-grid {
     display: grid;
     grid-template-columns: 220px 1fr 1fr;
     border-top: 1px solid #ccd;
   }
-
+ 
   .sc-col { border-right: 1px solid #ccd; }
   .sc-col:last-child { border-right: none; }
-
+ 
   .sc-col-header {
     background: #111;
     color: #fff;
@@ -381,7 +384,7 @@
     letter-spacing: 0.5px;
     border-bottom: 1px solid #333;
   }
-
+ 
   .sc-sub-header {
     display: grid;
     background: #222;
@@ -391,15 +394,15 @@
     text-transform: uppercase;
     border-bottom: 1px solid #444;
   }
-
+ 
   .sc-sub-cell {
     padding: 6px 12px;
     border-right: 1px solid #333;
     font-family: 'IBM Plex Mono', monospace;
   }
-
+ 
   .sc-sub-cell:last-child { border-right: none; }
-
+ 
   .rank-row {
     display: grid;
     grid-template-columns: 1fr 80px;
@@ -409,22 +412,22 @@
     font-family: 'IBM Plex Mono', monospace;
     color: #111;
   }
-
+ 
   .rank-row:hover { background: #f0f4ff; }
   .rank-row:nth-child(even) { background: #f7f9ff; }
   .rank-row:nth-child(even):hover { background: #e8eeff; }
   .rank-row:last-child { border-bottom: none; }
-
+ 
   .rank-row .rc { padding: 7px 12px; border-right: 1px solid #dde; }
   .rank-row .rc:last-child { border-right: none; text-align: center; }
-
+ 
   .rank-val {
     font-family: 'Rajdhani', sans-serif;
     font-weight: 700;
     font-size: 15px;
     color: #003087;
   }
-
+ 
   .cet-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -434,13 +437,13 @@
     font-family: 'IBM Plex Mono', monospace;
     color: #111;
   }
-
+ 
   .cet-row:hover { background: #f0f4ff; }
   .cet-row:nth-child(even) { background: #f7f9ff; }
   .cet-row:last-child { border-bottom: none; }
   .cet-row .cc { padding: 7px 12px; border-right: 1px solid #dde; }
   .cet-row .cc:last-child { border-right: none; text-align: center; }
-
+ 
   .qual-row {
     display: grid;
     grid-template-columns: 1fr 60px 60px;
@@ -450,21 +453,21 @@
     font-family: 'IBM Plex Mono', monospace;
     color: #111;
   }
-
+ 
   .qual-row:hover { background: #f0f4ff; }
   .qual-row:nth-child(even) { background: #f7f9ff; }
   .qual-row:last-child { border-bottom: none; }
   .qual-row .qc { padding: 7px 12px; border-right: 1px solid #dde; }
   .qual-row .qc:last-child { border-right: none; text-align: center; }
   .qual-row .qc:nth-child(2) { text-align: center; }
-
+ 
   .qual-val {
     font-family: 'Rajdhani', sans-serif;
     font-weight: 700;
     font-size: 15px;
     color: #1a5c1a;
   }
-
+ 
   .sc-footer {
     background: #f5f6fa;
     border-top: 1px solid #ccd;
@@ -474,7 +477,7 @@
     font-family: 'IBM Plex Mono', monospace;
     text-align: center;
   }
-
+ 
   /* Back button */
   .back-btn {
     display: inline-flex;
@@ -494,14 +497,21 @@
     text-transform: uppercase;
     transition: background 0.15s;
   }
-
+ 
   .back-btn:hover { background: #002270; }
-
+ 
+ 
+  @media print {
+    body { background: #fff !important; padding: 0 !important; }
+    #result-panel > div:first-child { display: none !important; }
+    .scorecard-wrap { box-shadow: none !important; }
+  }
+ 
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(14px); }
     to { opacity: 1; transform: translateY(0); }
   }
-
+ 
   @media (max-width: 700px) {
     .sc-grid { grid-template-columns: 1fr; }
     .sc-col { border-right: none; border-bottom: 1px solid #ccd; }
@@ -510,11 +520,11 @@
 </style>
 </head>
 <body>
-
+ 
 <!-- ── LOGIN PANEL ── -->
 <div class="login-wrap" id="login-panel">
   <div class="gov-card">
-
+ 
     <div class="gov-topbar">
       <div class="kea-logo">K E A</div>
       <div class="gov-center-text">
@@ -523,20 +533,20 @@
       </div>
       <div class="gov-emblem">🏛️</div>
     </div>
-
+ 
     <div class="gov-exam-title">UGCET 2026 Examination Result for Professional Courses 06-06-2026</div>
     <div class="gov-section-bar">Candidate Login</div>
-
+ 
     <div class="gov-form-body">
       <div class="form-instruction">
         Enter your Application Number and Date of Birth to view your result. Fields marked <span style="color:#c00">*</span> are mandatory.
       </div>
-
+ 
       <div class="form-row">
         <label class="form-label" for="cet-input">Application Number <span>*</span></label>
         <input type="text" id="cet-input" class="form-input" placeholder="Enter your application number" maxlength="12" autocomplete="off" />
       </div>
-
+ 
       <div class="form-row">
         <label class="form-label">Date of Birth <span>*</span></label>
         <div class="dob-row">
@@ -566,27 +576,30 @@
           </select>
         </div>
       </div>
-
+ 
       <button class="gov-btn" onclick="lookupResult()">View Result</button>
-
+ 
       <div class="error-box" id="error-msg">
         <span>⚠</span>
         <span id="error-text">Invalid credentials. Please check your Application Number and Date of Birth.</span>
       </div>
     </div>
-
+ 
     <div class="gov-card-footer">
       UGCET 2026 — Karnataka Examinations Authority — cetonline.karnataka.gov.in/kea
     </div>
   </div>
 </div>
-
+ 
 <!-- ── RESULT PANEL ── -->
 <div id="result-panel">
-  <button class="back-btn" onclick="goBack()">← Back to Login</button>
-
+  <div style="display:flex; gap:10px; margin-bottom:16px;">
+    <button class="back-btn" style="margin-bottom:0" onclick="goBack()">← Back to Login</button>
+    <button class="back-btn" style="margin-bottom:0; background:#1a5c1a;" onclick="printResult()">⬇ Download PDF</button>
+  </div>
+ 
   <div class="scorecard-wrap">
-
+ 
     <div class="sc-topbar">
       <div class="sc-kea-logo">K E A</div>
       <div class="sc-gov-text">
@@ -595,10 +608,10 @@
       </div>
       <div class="sc-emblem">🏛️</div>
     </div>
-
+ 
     <div class="sc-exam-title">UGCET 2026 Examination Result for Professional Courses 06-06-2026</div>
     <div class="sc-section-header">Discipline wise Rank</div>
-
+ 
     <div class="sc-info-row">
       <div class="sc-info-cell" style="flex:0 0 auto">
         <span class="lbl">Application Number</span>
@@ -609,9 +622,9 @@
         <span class="val">Aditya Vivek Pradhan</span>
       </div>
     </div>
-
+ 
     <div class="sc-grid">
-
+ 
       <!-- Rank Details -->
       <div class="sc-col">
         <div class="sc-col-header">Rank Details</div>
@@ -621,7 +634,7 @@
         </div>
         <div class="rank-row"><div class="rc">B-Pharma</div><div class="rc">—</div></div>
         <div class="rank-row"><div class="rc">BPT</div><div class="rc">—</div></div>
-        <div class="rank-row"><div class="rc">Engineering</div><div class="rc">—</div></div>
+        <div class="rank-row"><div class="rc">Engineering</div><div class="rc"><span class="rank-val">5349</span></div></div>
         <div class="rank-row"><div class="rc">Food Sci(Theory)</div><div class="rc">—</div></div>
         <div class="rank-row"><div class="rc">Nursing</div><div class="rc">—</div></div>
         <div class="rank-row"><div class="rc">Pharm-D</div><div class="rc">—</div></div>
@@ -638,7 +651,7 @@
         <div class="rank-row"><div class="rc">Naturopathy & Yoga</div><div class="rc">—</div></div>
         <div class="rank-row"><div class="rc">Medical Record Tech.</div><div class="rc">—</div></div>
       </div>
-
+ 
       <!-- CET Marks -->
       <div class="sc-col">
         <div class="sc-col-header">CET Marks Details</div>
@@ -650,7 +663,7 @@
         <div class="cet-row"><div class="cc">CHEMISTRY</div><div class="cc">42 / 60</div></div>
         <div class="cet-row"><div class="cc">MATHS</div><div class="cc">55 / 60</div></div>
       </div>
-
+ 
       <!-- Qualification Marks -->
       <div class="sc-col">
         <div class="sc-col-header">Qualification Marks Details</div>
@@ -663,20 +676,17 @@
         <div class="qual-row"><div class="qc">ENGLISH</div><div class="qc"><span class="qual-val">92</span></div><div class="qc">100</div></div>
         <div class="qual-row"><div class="qc">MATHEMATICS</div><div class="qc"><span class="qual-val">81</span></div><div class="qc">100</div></div>
         <div class="qual-row"><div class="qc">PHYSICS</div><div class="qc"><span class="qual-val">72</span></div><div class="qc">100</div></div>
-        <div style="padding:8px 12px; border-top:1px solid #dde; background:#fff;">
-          <div style="font-size:11.5px;color:#0000cc;text-decoration:underline;cursor:pointer;font-family:Arial,sans-serif;margin-bottom:5px;">Click here to update your 12th / PUC QE marks</div>
-          <div style="font-size:11.5px;color:#222;font-family:Arial,sans-serif;line-height:1.5;"><strong>Note:</strong> Results will be announced after 5 days of marks update.</div>
-        </div>
+ 
       </div>
-
+ 
     </div>
-
+ 
     <div class="sc-footer">
       UGCET 2026 — Karnataka Examinations Authority — cetonline.karnataka.gov.in/kea &nbsp;·&nbsp; 1/1
     </div>
   </div>
 </div>
-
+ 
 <script>
   function lookupResult() {
     const appNo = document.getElementById('cet-input').value.trim();
@@ -685,9 +695,9 @@
     const year  = document.getElementById('dob-year').value;
     const errorMsg  = document.getElementById('error-msg');
     const errorText = document.getElementById('error-text');
-
+ 
     errorMsg.classList.remove('show');
-
+ 
     if (!appNo) {
       errorText.textContent = 'Please enter your Application Number.';
       errorMsg.classList.add('show'); return;
@@ -696,12 +706,12 @@
       errorText.textContent = 'Please select your complete Date of Birth.';
       errorMsg.classList.add('show'); return;
     }
-
+ 
     const validApp  = '26245566';
     const validDay  = '11';
     const validMon  = '07';
     const validYear = '2008';
-
+ 
     if (appNo === validApp && day === validDay && month === validMon && year === validYear) {
       document.getElementById('login-panel').style.display = 'none';
       const rp = document.getElementById('result-panel');
@@ -712,13 +722,18 @@
       errorMsg.classList.add('show');
     }
   }
-
+ 
+ 
+  function printResult() {
+    window.print();
+  }
+ 
   function goBack() {
     document.getElementById('result-panel').classList.remove('show');
     document.getElementById('login-panel').style.display = 'block';
     document.getElementById('error-msg').classList.remove('show');
   }
-
+ 
   document.getElementById('cet-input').addEventListener('keydown', function(e) {
     if (e.key === 'Enter') lookupResult();
   });
